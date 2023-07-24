@@ -292,12 +292,13 @@ body::before {
     grid-column: 1/-1;
   }
   .pricing-card__pricing {
-    margin-top: 50px;
+    margin: 25px 0px;
     order: 4;
     grid-column: 1/-1;
   }
   .pricing-card__form-toggle-container {
     justify-content: center;
+    margin: 25px auto;
   }
   .pricing-card__form-toggle-container label {
     margin: 0 0px;
@@ -323,7 +324,6 @@ body::before {
     height: calc((var(--togle-height) - var(--togle-height) / 3) / 1.2);
   }
   .pricing-card__form-features {
-    margin-top: 50px;
     justify-self: center;
     grid-column: 1/-1;
   }
