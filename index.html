@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./index.js"></script>
+    <script defer src="./sliderStyling.js"></script>
+  </head>
+  <body>
+    <section class="pricing-card__intro">
+      <img
+        class="pricing-card__intro-circles"
+        src="./images/pattern-circles.svg"
+        alt=""
+      />
+      <h1 class="pricing-card__intro-title">Simple, traffic-based pricing</h1>
+      <p class="pricing-card__intro-paragraph">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </section>
+    <section class="pricing-card">
+      <div class="pricing-card__pageviews">
+        <p class="pricing-card__pageviews-count">10k</p>
+        <span>Pageviews</span>
+      </div>
+      <div class="pricing-card__pricing">
+        <p class="pricing-card__pricing-amount">$8.00</p>
+        <span class="pricing-card__pricing-slash-sign">/</span>
+        <p class="pricing-card__pricing-period">month</p>
+      </div>
+
+      <input
+        type="range"
+        class="pricing-card__form-input"
+        min="1"
+        step="1"
+        value="1"
+      />
+      <div class="pricing-card__form-toggle-container">
+        <label for="toggle">Montly Billing</label>
+        <input class="pricing-card__form-toggle" type="checkbox" id="toggle" />
+        <label for="toggle">Yearly Billing</label>
+        <span class="pricing-card__form-discount"> </span>
+      </div>
+
+      <ul class="pricing-card__form-features">
+        <li class="pricing-card__form-feature">Unlimited websites</li>
+        <li class="pricing-card__form-feature">100% data ownership</li>
+        <li class="pricing-card__form-feature">Email reports</li>
+      </ul>
+      <button class="pricing-card__form-submit-btn">Start my trial</button>
+    </section>
+  </body>
+</html>
